@@ -12,10 +12,12 @@ const Heading = () => {
           alt="logo of the site 'Arminas photography'"
         />
       </div>
-      <h1 className="heading-container">
-        <span className="heading-main">Photography</span>
-        <span className="heading-sub">By Arminas Strolys</span>
-      </h1>
+      <div className="heading-container">
+        <h1 className="heading-texts">
+          <span className="heading-main">Photography</span>
+          <span className="heading-sub">By Arminas Strolys</span>
+        </h1>
+      </div>
     </div>
   );
 };
