@@ -1,8 +1,11 @@
 @import '_var.scss';
 
 body {
-  // background-color: rgb(255, 204, 204);
   background-color: $White;
   font-family: $font-lato;
-  // margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $Gray-Text-Color;
+  // padding: 30px;
 }
