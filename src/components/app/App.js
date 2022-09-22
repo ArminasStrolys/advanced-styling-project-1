@@ -1,7 +1,9 @@
+import Heading from '../heading/Heading';
+
 function App() {
   return (
     <div className="App">
-      <h1>Super test start</h1>
+      <Heading />
     </div>
   );
 }

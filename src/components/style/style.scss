@@ -1,2 +1,9 @@
 @import '_var.scss';
 @import '_body.scss';
+@import '_heading.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
