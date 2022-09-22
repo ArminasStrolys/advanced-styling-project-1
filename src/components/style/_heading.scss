@@ -16,15 +16,17 @@
   position: relative;
 }
 
-.logo-container {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  opacity: 0.8;
-  .logo {
-    width: 100px;
-  }
-}
+//// COMPANY LOGO ----------------------------------
+// .logo-container {
+//   position: absolute;
+//   top: 20px;
+//   left: 20px;
+//   opacity: 0.8;
+//   .logo {
+//     width: 100px;
+//   }
+// }
+//// ------------------------------------------------
 
 .heading-container {
   position: absolute;
@@ -41,6 +43,20 @@
       font-weight: 400;
       letter-spacing: 35px;
       margin-right: -32px;
+      animation: move_from_left 2s ease-in-out;
+    }
+    @keyframes move_from_left {
+      0% {
+        // transform: translateX(-100px);
+        transform: translate(-100px, -100px);
+        opacity: 0;
+      }
+      100% {
+        // transform: translateX(0);
+        transform: translate(0, 0);
+
+        opacity: 1;
+      }
     }
     .heading-sub {
       display: block;
@@ -48,6 +64,17 @@
       font-weight: 700;
       letter-spacing: 34px;
       margin-right: -32px;
+      animation: move_from_right 2s ease-in-out;
+    }
+    @keyframes move_from_right {
+      0% {
+        transform: translate(100px, 100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
     }
   }
 }
