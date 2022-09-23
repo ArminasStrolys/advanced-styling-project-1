@@ -18,6 +18,9 @@ const Heading = () => {
           <span className="heading-main">Photography</span>
           <span className="heading-sub">By Arminas Strolys</span>
         </h1>
+        <a href="#" className="btn btn-main btn-animated">
+          Discover
+        </a>
       </div>
     </div>
   );

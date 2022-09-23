@@ -3,9 +3,9 @@
 .header {
   height: 95vh;
   background-image: linear-gradient(
-      to right bottom,
-      $LightBlueTransparent,
-      $DarkBlueTransparent
+      to bottom,
+      $lightBlueTransparent,
+      $darkBlueTransparent
     ),
     url(../images/sunset.jpg);
   background-size: cover;
@@ -31,9 +31,10 @@
   position: absolute;
   top: 40%;
   left: 50%;
+  text-align: center;
   transform: translate(-50%, -50%);
   .heading-texts {
-    color: $White;
+    color: $white;
     text-transform: uppercase;
     text-align: center;
     backface-visibility: hidden;
@@ -75,6 +76,59 @@
         transform: translate(0, 0);
         opacity: 1;
       }
+    }
+  }
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 80px;
+    display: inline-block;
+    transition: all 1s;
+    position: relative;
+  }
+  .btn:hover {
+    background-color: $white;
+    color: $gray-Text-Color;
+    box-shadow: 0 10px 10px $btnHover1;
+  }
+  .btn:active {
+    transform: scale(0.8);
+    box-shadow: 2px 2px 2px $btnHover2;
+  }
+  .btn-main {
+    margin-top: 30px;
+    background-color: $main-btn-color;
+    border: 1px solid $white;
+    color: $white;
+  }
+  .btn-main::after {
+    background-color: $main-btn-color;
+  }
+  .btn::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 1s;
+  }
+  .btn:hover::after {
+    transform: scaleY(2) scaleX(1.4);
+    opacity: 0;
+  }
+  .btn-animated {
+    animation: btn_fade 2s ease-in-out 1s backwards;
+  }
+  @keyframes btn_fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 }
