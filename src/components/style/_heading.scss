@@ -36,13 +36,14 @@
     color: $White;
     text-transform: uppercase;
     text-align: center;
+    backface-visibility: hidden;
     .heading-main {
       display: block;
       font-size: 60px;
       font-weight: 400;
       letter-spacing: 35px;
       margin-right: -32px;
-      animation: move_from_left 2s ease-in-out;
+      animation: move_from_left 2s ease-out;
     }
     @keyframes move_from_left {
       0% {
@@ -61,9 +62,9 @@
       display: block;
       font-size: 20px;
       font-weight: 700;
-      letter-spacing: 34px;
+      letter-spacing: 34.35px;
       margin-right: -32px;
-      animation: move_from_right 2s ease-in-out;
+      animation: move_from_right 2s ease-out;
     }
     @keyframes move_from_right {
       0% {
