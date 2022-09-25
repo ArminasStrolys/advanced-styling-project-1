@@ -18,8 +18,8 @@
 //// COMPANY LOGO ----------------------------------
 // .logo-container {
 //   position: absolute;
-//   top: 20px;
-//   left: 20px;
+//   top: 2rem;
+//   left: 2rem;
 //   opacity: 0.8;
 //   .logo {
 //     width: 100px;
@@ -40,16 +40,16 @@
     backface-visibility: hidden;
     .heading-main {
       display: block;
-      font-size: 60px;
+      font-size: 6rem;
       font-weight: 400;
-      letter-spacing: 35px;
-      margin-right: -32px;
+      letter-spacing: 3.5rem;
+      margin-right: -3.2rem;
       animation: move_from_left 2s ease-out;
     }
     @keyframes move_from_left {
       0% {
         // transform: translateX(-100px);
-        transform: translate(-100px, -100px);
+        transform: translate(-10rem, -10rem);
         opacity: 0;
       }
       100% {
@@ -61,15 +61,15 @@
     }
     .heading-sub {
       display: block;
-      font-size: 20px;
+      font-size: 2rem;
       font-weight: 700;
-      letter-spacing: 34.35px;
-      margin-right: -32px;
+      letter-spacing: 3.42rem;
+      margin-right: -3.2rem;
       animation: move_from_right 2s ease-out;
     }
     @keyframes move_from_right {
       0% {
-        transform: translate(100px, 100px);
+        transform: translate(10rem, 10rem);
         opacity: 0;
       }
       100% {
@@ -82,7 +82,7 @@
   .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 80px;
+    padding: 1.5rem 8rem;
     display: inline-block;
     transition: all 1s;
     position: relative;
@@ -90,17 +90,18 @@
   .btn:hover {
     background-color: $white;
     color: $gray-Text-Color;
-    box-shadow: 0 10px 10px $btnHover1;
+    box-shadow: 0 1rem 1rem $btnHover1;
   }
   .btn:active {
     transform: scale(0.8);
-    box-shadow: 2px 2px 2px $btnHover2;
+    box-shadow: 0.2rem 0.2rem 0.2rem $btnHover2;
   }
   .btn-main {
-    margin-top: 30px;
+    margin-top: 3rem;
     background-color: $main-btn-color;
-    border: 1px solid $white;
+    border: 0.1rem solid $white;
     color: $white;
+    font-size: 1.6rem;
   }
   //
   .btn-main::after {
