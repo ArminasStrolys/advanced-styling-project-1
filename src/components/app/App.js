@@ -2,7 +2,7 @@ import Heading from '../heading/Heading';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Heading />
     </div>
   );

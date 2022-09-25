@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/logo-minimal.png';
+// import logo from '../images/logo-minimal.png';
 
 const Heading = () => {
   return (
