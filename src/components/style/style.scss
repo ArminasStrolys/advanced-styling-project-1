@@ -1,9 +1,22 @@
 @import '_var.scss';
-@import '_body.scss';
 @import '_heading.scss';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: $white;
+  font-family: $font-lato;
+  font-weight: 400;
+  // font-size: 16px;
+  line-height: 1.7;
+  color: $gray-Text-Color;
+  // padding: 30px;
 }
