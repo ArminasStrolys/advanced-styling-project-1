@@ -4,8 +4,8 @@
   height: 95vh;
   background-image: linear-gradient(
       to bottom,
-      $lightBlueTransparent,
-      $darkBlueTransparent
+      rgba($headingColor1, 0.7),
+      rgba($headingColor2, 0.6)
     ),
     url(../images/sunset.jpg);
   background-size: cover;
@@ -90,22 +90,22 @@
   .btn:hover {
     background-color: $white;
     color: $gray-Text-Color;
-    box-shadow: 0 1rem 1rem $btnHover1;
+    box-shadow: 0 1rem 1rem rgba($btnHover1, 0.3);
   }
   .btn:active {
     transform: scale(0.8);
-    box-shadow: 0.2rem 0.2rem 0.2rem $btnHover2;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba($btnHover1, 0.2);
   }
   .btn--primary {
     margin-top: 3rem;
-    background-color: $main-btn-color;
+    background-color: rgba($main-btn-color, 0.3);
     border: 0.1rem solid $white;
     color: $white;
     font-size: 1.6rem;
   }
   //
   .btn--primary::after {
-    background-color: $main-btn-color;
+    background-color: rgba($main-btn-color, 0.3);
   }
   .btn::after {
     content: '';
