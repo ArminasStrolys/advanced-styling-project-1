@@ -13,12 +13,12 @@ const Heading = () => {
           alt="logo of the site 'Arminas photography'"
         />
       </div> */}
-      <div className="heading-container">
-        <h1 className="heading-texts">
-          <span className="heading-main">Photography</span>
-          <span className="heading-sub">By Arminas Strolys</span>
+      <div className="header__container">
+        <h1 className="header-primary">
+          <span className="header-primary--main">Photography</span>
+          <span className="header-primary--sub">By Arminas Strolys</span>
         </h1>
-        <a href="#" className="btn btn-main btn-animated">
+        <a href="#" className="btn btn--primary btn--animated">
           Discover
         </a>
       </div>

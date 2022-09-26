@@ -27,18 +27,18 @@
 // }
 //// ------------------------------------------------
 
-.heading-container {
+.header__container {
   position: absolute;
   top: 40%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
-  .heading-texts {
+  .header-primary {
     color: $white;
     text-transform: uppercase;
     text-align: center;
     backface-visibility: hidden;
-    .heading-main {
+    .header-primary--main {
       display: block;
       font-size: 6rem;
       font-weight: 400;
@@ -59,7 +59,7 @@
         opacity: 1;
       }
     }
-    .heading-sub {
+    .header-primary--sub {
       display: block;
       font-size: 2rem;
       font-weight: 700;
@@ -96,7 +96,7 @@
     transform: scale(0.8);
     box-shadow: 0.2rem 0.2rem 0.2rem $btnHover2;
   }
-  .btn-main {
+  .btn--primary {
     margin-top: 3rem;
     background-color: $main-btn-color;
     border: 0.1rem solid $white;
@@ -104,7 +104,7 @@
     font-size: 1.6rem;
   }
   //
-  .btn-main::after {
+  .btn--primary::after {
     background-color: $main-btn-color;
   }
   .btn::after {
@@ -122,7 +122,7 @@
     transform: scaleY(2) scaleX(1.4);
     opacity: 0;
   }
-  .btn-animated {
+  .btn--animated {
     animation: btn_fade 2s ease-in-out 1s backwards;
   }
   @keyframes btn_fade {
