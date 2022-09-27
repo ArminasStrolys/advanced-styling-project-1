@@ -34,7 +34,7 @@
   text-align: center;
   transform: translate(-50%, -50%);
   .header-primary {
-    color: $white;
+    color: $color-white;
     text-transform: uppercase;
     text-align: center;
     backface-visibility: hidden;
@@ -88,24 +88,25 @@
     position: relative;
   }
   .btn:hover {
-    background-color: $white;
+    background-color: $color-white;
     color: $gray-Text-Color;
-    box-shadow: 0 1rem 1rem rgba($btnHover1, 0.3);
+    box-shadow: 0 1rem 1rem rgba($color-black, 0.3);
   }
   .btn:active {
     transform: scale(0.8);
-    box-shadow: 0.2rem 0.2rem 0.2rem rgba($btnHover1, 0.2);
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba($color-black, 0.2);
   }
   .btn--primary {
     margin-top: 3rem;
-    background-color: rgba($main-btn-color, 0.3);
-    border: 0.1rem solid $white;
-    color: $white;
+    background-color: rgba($main-btn-color, 0.1);
+    border: 0.1rem solid $color-white;
+    color: $color-white;
     font-size: 1.6rem;
+    font-weight: 600;
   }
   //
   .btn--primary::after {
-    background-color: rgba($main-btn-color, 0.3);
+    background-color: rgba($main-btn-color, 0.1);
   }
   .btn::after {
     content: '';
