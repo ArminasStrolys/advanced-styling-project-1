@@ -10,12 +10,12 @@
     url(../images/sunset.jpg);
   background-size: cover;
   background-position: center;
-  // background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 63%, 76% 77%, 26% 81%, 0% 94%);
   position: relative;
 }
 
-//// COMPANY LOGO ----------------------------------
+//// -------------------------------------------------------------------- COMPANY LOGO SECTION
+
 // .logo-container {
 //   position: absolute;
 //   top: 2rem;
@@ -26,7 +26,7 @@
 //   }
 // }
 //// ------------------------------------------------
-
+// -------------------------------------------------------------------- HEADING TEXTS SECTION
 .header__container {
   position: absolute;
   top: 40%;
@@ -43,7 +43,7 @@
     animation: border_opacity 2s ease-in-out 1s backwards;
     @keyframes border_opacity {
       0% {
-        border: 0rem solid rgba($color-white, 0);
+        border: 0.1rem solid rgba($color-white, 0);
       }
       100% {
         border: 0.1rem solid rgba($color-white, 1);
@@ -67,7 +67,6 @@
         }
       }
     }
-
     &--sub {
       display: block;
       font-size: 2rem;
@@ -87,7 +86,7 @@
       }
     }
   }
-
+  // -------------------------------------------------------------------- BUTTON SECTION
   .btn {
     &:link,
     &:visited {
@@ -133,7 +132,6 @@
       z-index: -1;
       transition: all 1s;
     }
-
     &--animated {
       animation: btn_fade 2s ease-in-out 1s backwards;
     }

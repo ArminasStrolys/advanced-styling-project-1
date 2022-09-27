@@ -1,13 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:wght@100,300,400,700,900);
 
+// ------------------------------------- FONTS
 $font-lato: 'Lato', sans-serif;
-
-$color-white: rgb(255, 255, 255);
-$main-btn-color: rgba(172, 172, 172);
-$gray-Text-Color: rgb(119, 119, 119);
+// ------------------------------------- MAIN PAGE COLOURS
 // $lightBlue: rgb(160, 201, 255);
 // $mediumBlue: rgb(118, 178, 255);
 // $darkBlue: rgb(77, 154, 255);
+// ------------------------------------- PRIMARY COLOURS
+$color-white: rgb(255, 255, 255);
+$color-black: rgba(0, 0, 0);
+// ------------------------------------- PRIMARY COLOURS FOR GRADIENTS
 $headingColor1: rgba(255, 238, 160);
 $headingColor2: rgba(255, 140, 111);
-$color-black: rgba(0, 0, 0);
+// ------------------------------------- BUTTON COLOURS
+$main-btn-color: rgba(172, 172, 172);
+$gray-Text-Color: rgb(119, 119, 119);
