@@ -38,6 +38,17 @@
     text-transform: uppercase;
     text-align: center;
     backface-visibility: hidden;
+    border: 0.1rem solid $color-white;
+    padding: 4rem 5rem;
+    animation: border_opacity 2s ease-in-out 1s backwards;
+    @keyframes border_opacity {
+      0% {
+        border: 0rem solid rgba($color-white, 0);
+      }
+      100% {
+        border: 0.1rem solid rgba($color-white, 1);
+      }
+    }
     &--main {
       display: block;
       font-size: 6rem;
@@ -45,17 +56,18 @@
       letter-spacing: 3.5rem;
       margin-right: -3.2rem;
       animation: move_from_left 2s ease-out;
-    }
-    @keyframes move_from_left {
-      0% {
-        transform: translate(-10rem, -10rem);
-        opacity: 0;
+      @keyframes move_from_left {
+        0% {
+          transform: translate(-10rem, -10rem);
+          opacity: 0;
+        }
+        100% {
+          transform: translate(0, 0);
+          opacity: 1;
+        }
       }
-      100% {
-        transform: translate(0, 0);
-        opacity: 1;
-      }
     }
+
     &--sub {
       display: block;
       font-size: 2rem;
@@ -63,15 +75,15 @@
       letter-spacing: 3.42rem;
       margin-right: -3.2rem;
       animation: move_from_right 2s ease-out;
-    }
-    @keyframes move_from_right {
-      0% {
-        transform: translate(10rem, 10rem);
-        opacity: 0;
-      }
-      100% {
-        transform: translate(0, 0);
-        opacity: 1;
+      @keyframes move_from_right {
+        0% {
+          transform: translate(10rem, 10rem);
+          opacity: 0;
+        }
+        100% {
+          transform: translate(0, 0);
+          opacity: 1;
+        }
       }
     }
   }
