@@ -1,0 +1,16 @@
+@import '_var.scss';
+
+.intro {
+  background-color: $color-main-grayish;
+  padding: 25rem 0;
+  margin-top: -27vh;
+  .heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $headingColor1, $headingColor2);
+    display: inline-block;
+    background-clip: text;
+    color: transparent;
+  }
+}
