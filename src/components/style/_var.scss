@@ -3,17 +3,19 @@
 // ------------------------------------- FONTS
 $font-lato: 'Lato', sans-serif;
 // ------------------------------------- MAIN PAGE COLOURS
-
+$color-main-grayish: rgb(241, 241, 241);
 // $lightBlue: rgb(160, 201, 255);
 // $mediumBlue: rgb(118, 178, 255);
 // $darkBlue: rgb(77, 154, 255);
 // ------------------------------------- PRIMARY COLOURS
 $color-white: rgb(255, 255, 255);
 $color-black: rgba(0, 0, 0);
+
 // ------------------------------------- PRIMARY COLOURS FOR GRADIENTS
-$headingColor1: rgb(255, 231, 122);
+$headingColor1: rgb(255, 239, 169);
 $headingColor2: rgba(255, 140, 111);
-$color-main-grayish: rgb(241, 241, 241);
+$text-gradient-1: rgb(255, 208, 0);
+$text-gradient-2: rgba(255, 140, 111);
 // ------------------------------------- BUTTON COLOURS
 $main-btn-color: rgba(172, 172, 172);
 $gray-Text-Color: rgb(119, 119, 119);
