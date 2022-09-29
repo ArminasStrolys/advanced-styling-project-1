@@ -36,6 +36,10 @@ const Intro = () => {
               illum maxime magni laborum tempore rerum non veritatis ipsum
               quidem alias incidunt eligendi saepe!
             </p>
+            <a href="#" className="btn-text">
+              More &rarr;
+              <img src="" alt="" />
+            </a>
           </div>
           <div className="col-1-of-2">Test Text TTTTTTTTTTTTTTTTT</div>
         </div>
