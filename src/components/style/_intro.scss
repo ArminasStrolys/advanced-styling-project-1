@@ -82,8 +82,10 @@
     &__photo {
       width: 55%;
       box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
-      border-radius: 0.5rem;
+      border-radius: 0rem;
       position: absolute;
+      transition: all 0.5s;
+      outline-offset: 2rem;
       &--p1 {
         left: 5rem;
         top: 2rem;
@@ -95,6 +97,12 @@
       &--p3 {
         left: 15rem;
         top: 22rem;
+      }
+      &:hover {
+        outline: 1rem solid $headingColor1;
+        z-index: 1;
+        scale: 1.2;
+        box-shadow: 0 3rem 6rem rgba($color-black, 0.6);
       }
     }
   }
