@@ -1,5 +1,6 @@
 @import '_var.scss';
 
+// -------------------------------------------------------------------- MAIN SECTION HEADER TEXT
 .intro {
   background-color: $color-main-grayish;
   padding: 75rem 5%;
@@ -40,6 +41,7 @@
       transition: all 1s;
     }
   }
+  // -------------------------------------------------------------------- LEFT SIDE OF THE SECTION
   .heading-tertiary {
     font-size: $default-font-size;
     font-weight: 700;
@@ -72,6 +74,28 @@
       background-color: $headingColor1;
       color: $headingColor2;
       border-bottom: 0.1rem solid $headingColor1;
+    }
+  }
+  // -------------------------------------------------------------------- RIGHT SIDE OF THE SECTION
+  .composition {
+    position: relative;
+    &__photo {
+      width: 55%;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+      border-radius: 0.5rem;
+      position: absolute;
+      &--p1 {
+        left: 5rem;
+        top: 2rem;
+      }
+      &--p2 {
+        left: 10rem;
+        top: 12rem;
+      }
+      &--p3 {
+        left: 15rem;
+        top: 22rem;
+      }
     }
   }
 }

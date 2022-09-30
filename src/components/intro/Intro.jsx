@@ -1,4 +1,7 @@
 import React from 'react';
+import photo1 from '../images/comp-photo-1.jpg';
+import photo2 from '../images/comp-photo-2.jpg';
+import photo3 from '../images/comp-photo-3.jpg';
 
 const Intro = () => {
   return (
@@ -43,19 +46,19 @@ const Intro = () => {
           <div className="col-1-of-2">
             <div className="composition">
               <img
-                src=""
-                alt=""
+                src={photo1}
+                alt="Gallery preview 1 of 3"
                 className="composition__photo composition__photo--p1"
               />
               <img
-                src=""
-                alt=""
-                className="composition__photo composition__photo--p1"
+                src={photo2}
+                alt="Gallery preview 2 of 3"
+                className="composition__photo composition__photo--p2"
               />
               <img
-                src=""
-                alt=""
-                className="composition__photo composition__photo--p1"
+                src={photo3}
+                alt="Gallery preview 3 of 3"
+                className="composition__photo composition__photo--p3"
               />
             </div>
           </div>
