@@ -38,10 +38,27 @@ const Intro = () => {
             </p>
             <a href="#" className="btn-text">
               More &rarr;
-              <img src="" alt="" />
             </a>
           </div>
-          <div className="col-1-of-2">Test Text TTTTTTTTTTTTTTTTT</div>
+          <div className="col-1-of-2">
+            <div className="composition">
+              <img
+                src=""
+                alt=""
+                className="composition__photo composition__photo--p1"
+              />
+              <img
+                src=""
+                alt=""
+                className="composition__photo composition__photo--p1"
+              />
+              <img
+                src=""
+                alt=""
+                className="composition__photo composition__photo--p1"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>
