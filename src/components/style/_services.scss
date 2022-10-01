@@ -20,6 +20,7 @@
     position: relative;
     top: -20rem;
     @include box-shadow;
+    transition: all 0.3s;
     &__icon {
       width: 10rem;
     }
@@ -52,6 +53,10 @@
     }
     .heading-tertiary--txt-4::before {
       content: 'Video making';
+    }
+    &:hover {
+      top: -22rem;
+      scale: 1.05;
     }
   }
 }
