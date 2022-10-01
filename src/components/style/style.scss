@@ -2,6 +2,7 @@
 @import '_heading.scss';
 @import '_intro.scss';
 @import '_services.scss';
+@import '_pricing.scss';
 
 *,
 *::after,
@@ -14,7 +15,7 @@
 html {
   font-size: 62.5%;
   body {
-    background-color: $color-white;
+    background-color: $color-main-grayish;
     font-family: $font-lato;
     font-weight: 400;
     // font-size: 1.6rem;

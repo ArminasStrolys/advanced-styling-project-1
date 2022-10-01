@@ -89,6 +89,42 @@ $gutter-horizontal: 4rem;
 .margin-S {
   margin-bottom: 2rem;
 }
+.heading-secondary {
+  white-space: nowrap;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $text-gradient-1,
+    $text-gradient-2
+  );
+  display: inline-block;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  letter-spacing: 0.2rem;
+  &:hover::after {
+    opacity: 0;
+  }
+  &::after {
+    content: 'Photo and editing skills';
+    position: absolute;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      $text-gradient-2,
+      $text-gradient-1
+    );
+    background-clip: text;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    transition: all 1s;
+  }
+}
 .heading-tertiary {
   font-size: $default-font-size;
   font-weight: 700;

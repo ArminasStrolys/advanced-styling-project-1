@@ -3,7 +3,7 @@ import icon1 from '../images/icons/lr.svg';
 import icon2 from '../images/icons/ps.svg';
 import icon3 from '../images/icons/family.svg';
 import icon4 from '../images/icons/movie.svg';
-import Service from './Service';
+import Service from './service/Service';
 
 const icons = [icon1, icon2, icon3, icon4];
 

@@ -1,5 +1,6 @@
 import Heading from '../heading/Heading';
 import Intro from '../intro/Intro';
+import Pricing from '../pricing/Pricing';
 import Services from '../services/Services';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Heading />
       <Intro />
       <Services />
+      <Pricing />
     </div>
   );
 }
