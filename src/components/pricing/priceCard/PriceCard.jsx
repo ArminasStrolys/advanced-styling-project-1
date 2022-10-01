@@ -5,10 +5,11 @@ const PriceCard = (props) => {
     <div className="col-1-of-3">
       <div className={`card card--${props.cardNum}`}>
         <div className="card__side card__side--front">
-          <div className="card__picture"></div>
+          <div className={`card__picture card__picture--${props.cardNum}`}>
+            &nbsp;
+          </div>
           <div className="card__heading">{props.heading}</div>
           <div className="card__details"></div>
-          <p>Plan</p>
           <p>{props.info}</p>
           <p>Plan: {props.plan}</p>
         </div>
