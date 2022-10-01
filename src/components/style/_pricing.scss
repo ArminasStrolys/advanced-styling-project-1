@@ -33,17 +33,44 @@
         top: -50rem;
         background-image: linear-gradient(
           to right bottom,
-          rgba($card-col-1, 1),
-          rgba($card-col-1-gradient, 1)
+          rgba($card-col-1, 0.6),
+          rgba($card-col-1-gradient, 0.6)
         );
         transform: rotateY(180deg);
       }
     }
     &:hover .card__side--front {
-      transform: rotateY(180deg);
+      transform: rotateY(-180deg);
     }
     &:hover .card__side--back {
       transform: rotateY(0);
+    }
+  }
+  .card--1 {
+    .card__side--back {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($card-col-1, 0.5),
+        rgba($card-col-1-gradient, 0.5)
+      );
+    }
+  }
+  .card--2 {
+    .card__side--back {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($card-col-1, 0.6),
+        rgba($card-col-1-gradient, 0.6)
+      );
+    }
+  }
+  .card--3 {
+    .card__side--back {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($card-col-1, 0.7),
+        rgba($card-col-1-gradient, 0.7)
+      );
     }
   }
 }
