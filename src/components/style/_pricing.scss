@@ -48,11 +48,13 @@
       color: $color-white;
       text-transform: uppercase;
       position: absolute;
-      top: 16rem;
+      top: 19.2rem;
       left: 50%;
-      transform: translate(-50%);
+      transform: translate(-50%) skewY(-8deg);
       font-size: 2rem;
       white-space: nowrap;
+      background-color: rgba($headingColor2, 0.7);
+      width: 100%;
     }
     .card__picture {
       background-size: cover;
@@ -75,8 +77,8 @@
     .card__side--back {
       background-image: linear-gradient(
         to right bottom,
-        rgba($card-col-1, 0.5),
-        rgba($card-col-1-gradient, 0.5)
+        rgba($card-col-1, 1),
+        rgba($card-col-1-gradient, 1)
       );
     }
   }
@@ -84,8 +86,8 @@
     .card__picture--2 {
       background-image: linear-gradient(
           to right bottom,
-          rgba($card-col-1, 0.5),
-          rgba($card-col-1-gradient, 0.5)
+          rgba($card-col-2, 0.5),
+          rgba($card-col-2-gradient, 0.5)
         ),
         url('../images/pic-2.jpg');
       background-position: 0% 75%;
@@ -93,8 +95,8 @@
     .card__side--back {
       background-image: linear-gradient(
         to right bottom,
-        rgba($card-col-1, 0.6),
-        rgba($card-col-1-gradient, 0.6)
+        rgba($card-col-2, 1),
+        rgba($card-col-2-gradient, 1)
       );
     }
   }
@@ -102,8 +104,8 @@
     .card__picture--3 {
       background-image: linear-gradient(
           to right bottom,
-          rgba($card-col-1, 0.5),
-          rgba($card-col-1-gradient, 0.5)
+          rgba($card-col-3, 0.5),
+          rgba($card-col-3-gradient, 0.5)
         ),
         url('../images/pic-3.jpg');
       background-position: 0% 55%;
@@ -111,14 +113,9 @@
     .card__side--back {
       background-image: linear-gradient(
         to right bottom,
-        rgba($card-col-1, 0.7),
-        rgba($card-col-1-gradient, 0.7)
+        rgba($card-col-3, 1),
+        rgba($card-col-3-gradient, 1)
       );
     }
   }
-  // .card--1,
-  // .card--2,
-  // .card--3 {
-
-  // }
 }
