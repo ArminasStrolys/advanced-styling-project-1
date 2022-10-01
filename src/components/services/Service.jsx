@@ -15,7 +15,6 @@ const Service = (props) => {
         <p className="service-box__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
           provident beatae, placeat nemo asperiores delectus mollitia itaque,
-          voluptatum consectetur repudiandae dolor distinctio qui, unde quo eius
           nobis tempore maxime sapiente!
         </p>
       </div>

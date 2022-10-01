@@ -3,8 +3,8 @@
 // -------------------------------------------------------------------- MAIN SECTION HEADER TEXT
 .intro {
   background-color: $color-main-grayish;
-  padding: 75rem 5%;
-  margin-top: -70vh;
+  padding: 95rem 5%;
+  margin-top: -80vh;
   .heading-secondary {
     white-space: nowrap;
     font-size: 3.5rem;
@@ -82,6 +82,7 @@
       position: absolute;
       transition: all 0.5s;
       outline-offset: 1.5rem;
+      filter: grayscale(1);
       &--p1 {
         left: 5rem;
         top: 2rem;
@@ -99,6 +100,7 @@
         z-index: 1;
         transform: scale(1.2);
         box-shadow: 0 3rem 6rem rgba($color-black, 0.6);
+        filter: grayscale(0);
       }
     }
     &:hover .composition__photo:not(:hover) {

@@ -2,6 +2,9 @@
 
 .services {
   padding: 30rem 0;
+  position: relative;
+  top: -9rem;
+  height: 65vh;
   background-image: linear-gradient(
       to bottom,
       rgba($headingColor1, 0.7),
@@ -10,6 +13,10 @@
     url(../images/sand.jpg);
   background-position: bottom;
   background-size: cover;
+  transform: skewY(-7deg);
+  & > * {
+    transform: skewY(7deg);
+  }
   .service-box {
     background-color: rgba($color-black, 0.3);
     color: $color-white;
@@ -18,9 +25,10 @@
     text-align: center;
     border-radius: 1rem;
     position: relative;
-    top: -20rem;
+    top: -8rem;
     @include box-shadow;
-    transition: all 0.3s;
+    transition: all 0.2s;
+
     &__icon {
       width: 10rem;
     }
@@ -55,8 +63,9 @@
       content: 'Video making';
     }
     &:hover {
-      top: -22rem;
+      top: -9rem;
       scale: 1.05;
+      @include box-shadow(1rem, 3rem, 0.7);
     }
   }
 }

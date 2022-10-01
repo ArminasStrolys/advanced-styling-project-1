@@ -19,7 +19,7 @@ $gray-Text-Color: rgb(119, 119, 119);
 // ------------------------------------- GRID WIDTHS
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
-$gutter-horizontal: 2rem;
+$gutter-horizontal: 4rem;
 
 .row {
   max-width: $grid-width;
@@ -75,8 +75,8 @@ $gutter-horizontal: 2rem;
     clear: both;
   }
 }
-@mixin box-shadow {
-  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.5);
+@mixin box-shadow($s1: 1.5rem, $s2: 4rem, $alpha: 0.5) {
+  box-shadow: 0 $s1 $s2 rgba($color-black, $alpha);
 }
 // ------------------------------------- UNIVERSAL CLASSES
 
