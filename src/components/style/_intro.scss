@@ -79,13 +79,14 @@
   // -------------------------------------------------------------------- RIGHT SIDE OF THE SECTION
   .composition {
     position: relative;
+    // border: 2rem solid black;
     &__photo {
       width: 55%;
       box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
       border-radius: 0rem;
       position: absolute;
       transition: all 0.5s;
-      outline-offset: 2rem;
+      outline-offset: 1.5rem;
       &--p1 {
         left: 5rem;
         top: 2rem;
@@ -101,9 +102,12 @@
       &:hover {
         outline: 1rem solid $headingColor1;
         z-index: 1;
-        scale: 1.2;
+        transform: scale(1.2);
         box-shadow: 0 3rem 6rem rgba($color-black, 0.6);
       }
+    }
+    &:hover .composition__photo:not(:hover) {
+      transform: scale(0.9);
     }
   }
 }

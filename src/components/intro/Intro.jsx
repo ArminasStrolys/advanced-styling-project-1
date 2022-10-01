@@ -2,6 +2,7 @@ import React from 'react';
 import photo1 from '../images/comp-photo-1.jpg';
 import photo2 from '../images/comp-photo-2.jpg';
 import photo3 from '../images/comp-photo-3.jpg';
+// Photos cut at 1000x800 px
 
 const Intro = () => {
   return (
