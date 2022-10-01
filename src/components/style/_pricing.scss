@@ -1,11 +1,49 @@
 @import '_var.scss';
 
-.pricing{
+.pricing {
   margin-top: 10rem;
   height: 70vh;
+
   .heading-secondary {
     &::after {
       content: 'Service packages';
+    }
   }
+  .card {
+    width: 100%;
+    // height: 40rem;
+    text-align: center;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    font-size: $default-font-size;
+
+    // height: 50rem;
+    &__side {
+      transition: all 0.8s ease;
+      height: 50rem;
+      backface-visibility: hidden;
+      border-radius: 1rem;
+      @include box-shadow(2rem, 4rem, 0.3);
+      &--front {
+        position: relative;
+        background-color: $color-white;
+      }
+      &--back {
+        position: relative;
+        top: -50rem;
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($card-col-1, 1),
+          rgba($card-col-1-gradient, 1)
+        );
+        transform: rotateY(180deg);
+      }
+    }
+    &:hover .card__side--front {
+      transform: rotateY(180deg);
+    }
+    &:hover .card__side--back {
+      transform: rotateY(0);
+    }
   }
 }
