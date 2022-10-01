@@ -14,7 +14,7 @@ const Intro = () => {
         <div className="row">
           <div className="col-1-of-2">
             <h3 className="heading-tertiary margin-S">
-              Photography skills of a master
+              Photography - a different perspective
             </h3>
             <p className="paragraph">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga,
@@ -23,7 +23,7 @@ const Intro = () => {
               quidem alias incidunt eligendi saepe!
             </p>
             <h3 className="heading-tertiary margin-S">
-              Lightroom to customize the shades
+              Lightroom - true colors come to life
             </h3>
             <p className="paragraph">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga,
@@ -32,7 +32,7 @@ const Intro = () => {
               quidem alias incidunt eligendi saepe!
             </p>
             <h3 className="heading-tertiary margin-S">
-              Photoshop to adjust inperfect details
+              Photoshop - manipulate inperfect details
             </h3>
             <p className="paragraph">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga,

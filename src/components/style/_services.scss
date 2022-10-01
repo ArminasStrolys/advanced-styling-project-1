@@ -1,0 +1,57 @@
+@import '_var.scss';
+
+.services {
+  padding: 30rem 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($headingColor1, 0.7),
+      rgba($headingColor2, 0.6)
+    ),
+    url(../images/sand.jpg);
+  background-position: bottom;
+  background-size: cover;
+  .service-box {
+    background-color: rgba($color-black, 0.3);
+    color: $color-white;
+    font-size: $default-font-size;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    top: -20rem;
+    @include box-shadow;
+    &__icon {
+      width: 10rem;
+    }
+    .icon-basic-1 {
+      filter: brightness(0) saturate(100%) invert(84%) sepia(15%) saturate(357%)
+        hue-rotate(147deg) brightness(97%) contrast(92%);
+    }
+    .icon-basic-2 {
+      filter: brightness(0) saturate(100%) invert(66%) sepia(76%) saturate(900%)
+        hue-rotate(163deg) brightness(103%) contrast(97%);
+    }
+    .icon-basic-3 {
+      filter: brightness(0) saturate(100%) invert(17%) sepia(94%)
+        saturate(1839%) hue-rotate(343deg) brightness(123%) contrast(70%);
+    }
+    .icon-basic-4 {
+      filter: brightness(0) saturate(100%) invert(48%) sepia(94%) saturate(721%)
+        hue-rotate(360deg) brightness(102%) contrast(104%);
+    }
+    &__text {
+    }
+    .heading-tertiary--txt-1::before {
+      content: 'Lightroom';
+    }
+    .heading-tertiary--txt-2::before {
+      content: 'Photoshop';
+    }
+    .heading-tertiary--txt-3::before {
+      content: 'Portrait photography';
+    }
+    .heading-tertiary--txt-4::before {
+      content: 'Video making';
+    }
+  }
+}

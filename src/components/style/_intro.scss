@@ -42,11 +42,6 @@
     }
   }
   // -------------------------------------------------------------------- LEFT SIDE OF THE SECTION
-  .heading-tertiary {
-    font-size: $default-font-size;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
   .paragraph {
     font-size: $default-font-size;
     &:not(:last-child) {
@@ -82,7 +77,7 @@
     // border: 2rem solid black;
     &__photo {
       width: 55%;
-      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+      @include box-shadow;
       border-radius: 0rem;
       position: absolute;
       transition: all 0.5s;
