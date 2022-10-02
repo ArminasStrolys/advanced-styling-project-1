@@ -7,33 +7,30 @@ const data = [
     plan: 'Basic',
     people: 'Up to 2 people.',
     quantity: 15,
-    quality: 'FHD (1080px x 1920px)',
+    quality: 'FHD (1080 x 1920)',
     included: 'not included',
     days: '2',
     price: 40,
-    movie: 'not included',
   },
   {
     heading: 'Picture experience',
     plan: 'Plus',
     people: 'Up to 5 people.',
     quantity: 50,
-    quality: 'UHD 4K (3840px x 2160px)',
+    quality: 'UHD 4K (3840 x 2160)',
     included: 'included',
     days: '4',
     price: 99,
-    movie: 'not included',
   },
   {
     heading: 'Photoshoot experience',
     plan: 'Premium',
     people: '10+ people.',
     quantity: 150,
-    quality: 'Ultra (6000px x 4000px)',
+    quality: 'Ultra (6000 x 4000)',
     included: 'included',
     days: '5 to 15',
     price: 300,
-    movie: 'included',
   },
 ];
 
@@ -53,7 +50,6 @@ const Pricing = () => {
             quality={e.quality}
             included={e.included}
             days={e.days}
-            movie={e.movie}
             price={e.price}
           />
         ))}

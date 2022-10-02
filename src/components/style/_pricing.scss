@@ -63,6 +63,21 @@
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     }
+    &__details {
+      text-align: center;
+      margin-top: 1rem;
+      // color: coral;
+      p {
+        width: 75%;
+        line-height: 3.5rem;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        &:not(:last-child) {
+          border-bottom: 0.1rem solid rgba($main-btn-color, 0.3);
+        }
+      }
+    }
   }
   .card--1 {
     .card__picture--1 {

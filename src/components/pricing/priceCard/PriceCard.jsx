@@ -11,15 +11,15 @@ const PriceCard = (props) => {
           <h4 className={`card__heading card__heading--${props.cardNum}`}>
             <span className="card__heading-span">{props.heading}</span>
           </h4>
-          <div className="card__details"></div>
-          <p>Plan: {props.plan}</p>
+          <div className="card__details">
+            <p>Plan: {props.plan}</p>
 
-          <p>{props.people}</p>
-          <p>Photo quantity: {props.quantity}.</p>
-          <p>{props.quality} photo quality.</p>
-          <p>RAW photo files {props.included}.</p>
-          <p>Up to {props.days} days for final results.</p>
-          <p>Short intro movie {props.movie}.</p>
+            <p>{props.people}</p>
+            <p>Photo quantity: {props.quantity}.</p>
+            <p>{props.quality} photo quality.</p>
+            <p>RAW photo files {props.included}.</p>
+            <p>Up to {props.days} days for final results.</p>
+          </div>
         </div>
         <div className="card__side card__side--back">
           <p>Only {props.price}$</p>
