@@ -22,7 +22,15 @@ const PriceCard = (props) => {
           </div>
         </div>
         <div className="card__side card__side--back">
-          <p>Only {props.price}$</p>
+          <div className="card__cta">
+            <div className="card__price-box">
+              <p className="card__price-only">Only</p>
+              <p className="card__price-value">{props.price}€</p>
+            </div>
+            <a href="#" className="btn btn--primary">
+              Book now!
+            </a>
+          </div>
         </div>
       </div>
     </div>

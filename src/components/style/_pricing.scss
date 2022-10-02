@@ -78,6 +78,33 @@
         }
       }
     }
+    &__cta {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .btn,
+      .btn--white,
+      .btn::after {
+        white-space: nowrap;
+        border-radius: 10rem;
+        margin: 0 auto;
+      }
+    }
+    &__price-box {
+      color: $color-white;
+      text-shadow: 0.1rem 0.1rem 1rem rgba($color-black, 0.4);
+      width: 100%;
+    }
+    &__price-value {
+      font-size: 10rem;
+      font-weight: 100;
+    }
+    &__price-only {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
   }
   .card--1 {
     .card__picture--1 {

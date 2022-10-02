@@ -10,7 +10,7 @@ const data = [
     quality: 'FHD (1080 x 1920)',
     included: 'not included',
     days: '2',
-    price: 40,
+    price: 39,
   },
   {
     heading: 'Picture experience',
@@ -30,7 +30,7 @@ const data = [
     quality: 'Ultra (6000 x 4000)',
     included: 'included',
     days: '5 to 15',
-    price: 300,
+    price: 299,
   },
 ];
 
