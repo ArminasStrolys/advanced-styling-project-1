@@ -69,16 +69,17 @@
       background-image: linear-gradient(
           to right bottom,
           rgba($card-col-1, 0.5),
-          rgba($card-col-1-gradient, 0.5)
+          rgba($card-col-1-gradient, 0.2)
         ),
         url('../images/pic-1.jpg');
     }
 
-    .card__side--back {
+    .card__side--back,
+    .card__heading--1 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($card-col-1, 1),
-        rgba($card-col-1-gradient, 1)
+        rgba($card-col-1, 0.7),
+        rgba($card-col-1-gradient, 0.7)
       );
     }
   }
@@ -87,16 +88,17 @@
       background-image: linear-gradient(
           to right bottom,
           rgba($card-col-2, 0.5),
-          rgba($card-col-2-gradient, 0.5)
+          rgba($card-col-2-gradient, 0.2)
         ),
         url('../images/pic-2.jpg');
       background-position: 0% 75%;
     }
-    .card__side--back {
+    .card__side--back,
+    .card__heading--2 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($card-col-2, 1),
-        rgba($card-col-2-gradient, 1)
+        rgba($card-col-2, 0.7),
+        rgba($card-col-2-gradient, 0.7)
       );
     }
   }
@@ -105,16 +107,17 @@
       background-image: linear-gradient(
           to right bottom,
           rgba($card-col-3, 0.5),
-          rgba($card-col-3-gradient, 0.5)
+          rgba($card-col-3-gradient, 0.2)
         ),
         url('../images/pic-3.jpg');
       background-position: 0% 55%;
     }
-    .card__side--back {
+    .card__side--back,
+    .card__heading--3 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($card-col-3, 1),
-        rgba($card-col-3-gradient, 1)
+        rgba($card-col-3, 0.7),
+        rgba($card-col-3-gradient, 0.7)
       );
     }
   }

@@ -8,7 +8,7 @@ const PriceCard = (props) => {
           <div className={`card__picture card__picture--${props.cardNum}`}>
             &nbsp;
           </div>
-          <h4 className="card__heading">
+          <h4 className={`card__heading card__heading--${props.cardNum}`}>
             <span className="card__heading-span">{props.heading}</span>
           </h4>
           <div className="card__details"></div>
