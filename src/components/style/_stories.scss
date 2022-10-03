@@ -57,7 +57,7 @@
     }
     &:hover .story__image {
       scale: 1;
-      filter: blur(0.5rem);
+      filter: blur(0.5rem) brightness(80%);
       transform: unset;
     }
   }
