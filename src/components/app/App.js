@@ -3,6 +3,7 @@ import Intro from '../intro/Intro';
 import Pricing from '../pricing/Pricing';
 import Services from '../services/Services';
 import Stories from '../stories/Stories';
+import Booking from '../booking/Booking';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Services />
       <Pricing />
       <Stories />
+      <Booking />
     </div>
   );
 }
