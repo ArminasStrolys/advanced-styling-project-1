@@ -12,16 +12,26 @@
     @include box-shadow;
     background-color: $color-white;
     padding: 6rem;
+    padding-left: 9rem;
     font-size: $default-font-size;
-    // transform: skewX(-10deg);
+    transform: skewX(-12deg);
+    margin-bottom: 10rem;
+    & > * {
+      transform: skewX(12deg);
+    }
     &__shape {
       width: 15rem;
       height: 15rem;
-      background-color: coral;
       float: left;
       shape-outside: circle(50% at 50% 50%);
       clip-path: circle(50% at 50% 50%);
-      margin-right: 3rem;
+      transform: translateX(-3rem) skewX(12deg);
+    }
+    &__image {
+      width: 100%;
+    }
+    &__text {
+      width: 100%;
     }
   }
 }
