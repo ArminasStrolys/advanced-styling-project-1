@@ -1,0 +1,27 @@
+@import '_var.scss';
+
+.section-stories {
+  padding: 15rem 0;
+
+  .heading-secondary::after {
+    content: 'What others have to say';
+  }
+  .story {
+    width: 75%;
+    margin: 0 auto;
+    @include box-shadow;
+    background-color: $color-white;
+    padding: 6rem;
+    font-size: $default-font-size;
+    // transform: skewX(-10deg);
+    &__shape {
+      width: 15rem;
+      height: 15rem;
+      background-color: coral;
+      float: left;
+      shape-outside: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      margin-right: 3rem;
+    }
+  }
+}

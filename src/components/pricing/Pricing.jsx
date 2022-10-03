@@ -36,7 +36,7 @@ const data = [
 
 const Pricing = () => {
   return (
-    <section className="pricing">
+    <section className="pricing margin-XL">
       <h2 className="heading-secondary margin-XL">Service packages</h2>
       <div className="row">
         {data.map((e, index) => (
