@@ -2,7 +2,7 @@
 
 .section-stories {
   padding: 15rem 0;
-
+  position: relative;
   .heading-secondary::after {
     content: 'What others have to say';
   }
@@ -10,7 +10,7 @@
     width: 75%;
     margin: 0 auto;
     @include box-shadow;
-    background-color: $color-white;
+    background-color: rgba($color-white, 0.6);
     padding: 6rem;
     padding-left: 9rem;
     font-size: $default-font-size;
@@ -59,6 +59,32 @@
       scale: 1;
       filter: blur(0.5rem) brightness(80%);
       transform: unset;
+    }
+  }
+  .story-btn {
+    text-align: center;
+    position: relative;
+    .btn-text {
+      &:link,
+      &:visited {
+      }
+      &:hover {
+        margin-left: 0;
+      }
+    }
+  }
+  .bg-video {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    // overflow: hidden;
+    &__content {
+      height: 90%;
+      width: 100%;
+      object-fit: cover;
     }
   }
 }

@@ -208,3 +208,27 @@ $gutter-horizontal: 4rem;
     }
   }
 }
+
+.btn-text {
+  text-decoration: none;
+  transition: all 1s;
+  &:link,
+  &:visited {
+    color: $headingColor2;
+    font-size: 2rem;
+    // display: inline-block;
+    border-bottom: 0.1rem solid $headingColor2;
+    padding-bottom: 0.3rem;
+  }
+  &:hover {
+    background-color: $headingColor2;
+    color: $color-white;
+    padding: 1rem;
+    margin-left: -1rem;
+  }
+  &:active {
+    background-color: $headingColor1;
+    color: $headingColor2;
+    border-bottom: 0.1rem solid $headingColor1;
+  }
+}

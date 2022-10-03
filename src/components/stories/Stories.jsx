@@ -1,10 +1,19 @@
 import React from 'react';
 import avatar1 from '../images/avatar-1.jpg';
 import avatar2 from '../images/avatar-2.jpg';
+import vid1 from '../images/video.mp4';
+// import vid2 from '../images/video.webm';
 
 const Stories = () => {
   return (
     <section className="section-stories">
+      <div className="bg-video">
+        <video className="bg-video__content" autoPlay muted loop>
+          <source src={vid1} type="video/mp4" />
+          {/* <source src={vid2} type="video/webm" /> */}
+          Your browser does not support video playback.
+        </video>
+      </div>
       <h2 className="heading-secondary margin-XL">What others have to say</h2>
       <div className="row">
         <div className="story">
@@ -49,6 +58,12 @@ const Stories = () => {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="story-btn">
+        <a href="#" className="btn-text">
+          Read all stories &rarr;
+        </a>
       </div>
     </section>
   );
