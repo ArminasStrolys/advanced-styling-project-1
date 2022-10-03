@@ -26,12 +26,39 @@
       shape-outside: circle(50% at 50% 50%);
       clip-path: circle(50% at 50% 50%);
       transform: translateX(-3rem) skewX(12deg);
+      position: relative;
     }
     &__image {
       width: 100%;
+      backface-visibility: hidden;
+      scale: 1.2;
+      transition: all 0.5s;
+      transform: translateY(1.2rem);
     }
+    &__caption {
+      color: $color-white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 20%);
+      text-align: center;
+      font-size: 2rem;
+      text-transform: uppercase;
+      opacity: 0;
+      transition: all 0.5s;
+      backface-visibility: hidden;
+    }
+
     &__text {
-      width: 100%;
+    }
+    &:hover .story__caption {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+    &:hover .story__image {
+      scale: 1;
+      filter: blur(0.5rem);
+      transform: unset;
     }
   }
 }

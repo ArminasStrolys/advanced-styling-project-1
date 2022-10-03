@@ -10,6 +10,7 @@ const Stories = () => {
         <div className="story">
           <figure className="story__shape">
             <img className="story__image" src={avatar1} alt="" />
+            <figcaption className="story__caption">Dunkan Herring</figcaption>
           </figure>
           <div className="story__text">
             <h3 className="heading-tertiary margin-S">
@@ -30,6 +31,7 @@ const Stories = () => {
         <div className="story">
           <figure className="story__shape">
             <img className="story__image" src={avatar2} alt="" />
+            <figcaption className="story__caption">Blake Rayson</figcaption>
           </figure>
           <div className="story__text">
             <h3 className="heading-tertiary margin-S">
