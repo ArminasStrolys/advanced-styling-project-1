@@ -80,11 +80,12 @@
     height: 100%;
     width: 100%;
     opacity: 0.3;
-    // overflow: hidden;
+    overflow: hidden;
     &__content {
       height: 90%;
       width: 100%;
       object-fit: cover;
+      object-position: 0;
     }
   }
 }
