@@ -85,7 +85,11 @@ $gutter-horizontal: 4rem;
   box-shadow: 0 $s1 $s2 rgba($color-black, $alpha);
 }
 // ------------------------------------- UNIVERSAL CLASSES
-
+.center {
+  text-align: center;
+  position: relative;
+  top: 10rem;
+}
 .margin-XL {
   margin-bottom: 8rem;
 }
@@ -169,6 +173,16 @@ $gutter-horizontal: 4rem;
     font-weight: 600;
     &::after {
       background-color: rgba($main-btn-color, 0.3);
+    }
+  }
+  &--orange {
+    background-color: $color-coral;
+    color: $color-white;
+    font-size: $default-font-size;
+    border-radius: 5rem;
+    @include box-shadow;
+    &:hover {
+      background-color: rgba($color-coral, 0.4);
     }
   }
   &::after {
