@@ -28,6 +28,9 @@
       padding: 6rem;
 
       .form {
+        .heading-secondary {
+          left: 11.6rem;
+        }
         &__group:not(:last-child) {
           margin-bottom: 2rem;
         }
@@ -108,9 +111,8 @@
           opacity: 1;
         }
         &__group {
-          margin-bottom: 2rem;
           .btn {
-            margin-left: 3rem;
+            // margin-left: 3rem;
           }
         }
       }

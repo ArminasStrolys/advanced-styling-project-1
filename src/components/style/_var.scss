@@ -173,7 +173,9 @@ $gutter-horizontal: 4rem;
       opacity: 0;
     }
   }
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: scale(0.8);
     box-shadow: 0.2rem 0.2rem 0.2rem rgba($color-black, 0.2);
   }
