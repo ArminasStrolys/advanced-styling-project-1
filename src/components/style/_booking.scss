@@ -14,8 +14,8 @@
     height: 50rem;
     background-image: linear-gradient(
         105deg,
-        rgba($color-white, 0.8) 0%,
-        rgba($color-white, 0.7) 50%,
+        rgba($color-white, 0.4) 0%,
+        rgba($color-white, 0.5) 50%,
         transparent 50%
       ),
       url(../images/bg-1.jpg);
@@ -26,6 +26,47 @@
     &__form {
       width: 50%;
       padding: 6rem;
+      .form {
+        &__group:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+        &__input {
+          font-size: $default-font-size;
+          padding: 1.5rem 2rem;
+          color: inherit;
+          font-family: inherit;
+          border-radius: 0.4rem;
+          background-color: rgba($color-white, 0.8);
+          border: none;
+          border-bottom: 0.25rem solid transparent;
+          width: 75%;
+          display: block;
+          &:focus {
+            outline: none;
+            @include box-shadow(0rem, 1rem, 0.3);
+            border-bottom: 0.25rem solid $card-col-1;
+          }
+          &:focus:invalid {
+            border-bottom: 0.25rem solid $color-coral;
+          }
+          &::placeholder {
+            color: inherit;
+          }
+          &:placeholder-shown + .form__label {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-4rem);
+          }
+        }
+        &__label {
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin-left: 2rem;
+          margin-top: 0.7rem;
+          display: block;
+          transition: all 0.1s;
+        }
+      }
     }
   }
 }
