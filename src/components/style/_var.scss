@@ -87,8 +87,11 @@ $gutter-horizontal: 4rem;
 // ------------------------------------- UNIVERSAL CLASSES
 .center {
   text-align: center;
-  position: relative;
-  top: 10rem;
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%);
+  // top: 10rem;
 }
 .margin-XL {
   margin-bottom: 8rem;

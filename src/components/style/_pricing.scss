@@ -3,7 +3,7 @@
 .pricing {
   margin-top: 10rem;
   height: 70vh;
-
+  position: relative;
   .heading-secondary {
     &::after {
       content: 'Service packages';

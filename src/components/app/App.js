@@ -14,7 +14,6 @@ function App() {
       <Pricing />
       <Stories />
       <Booking />
-      
     </div>
   );
 }
