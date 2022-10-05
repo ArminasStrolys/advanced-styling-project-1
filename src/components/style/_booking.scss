@@ -7,13 +7,25 @@
     $headingColor1,
     $headingColor2
   );
-
+  .heading-secondary::after {
+    content: 'Book now!';
+  }
   .book {
     height: 50rem;
-    background-image: url(../images/bg-1.jpg);
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.8) 0%,
+        rgba($color-white, 0.7) 50%,
+        transparent 50%
+      ),
+      url(../images/bg-1.jpg);
     background-size: 100%;
     background-position: 0% 60%;
     border-radius: 0.5rem;
     @include box-shadow();
+    &__form {
+      width: 50%;
+      padding: 6rem;
+    }
   }
 }
