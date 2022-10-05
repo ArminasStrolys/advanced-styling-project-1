@@ -32,6 +32,46 @@ const Booking = () => {
                   E-mail
                 </label>
               </div>
+              <div className="form__group">
+                <div className="form__radio-group">
+                  <input
+                    type="radio"
+                    className="form__radio-input"
+                    id="basic"
+                    name="plan"
+                  />
+                  <label htmlFor="basic" className="form__radio-label">
+                    <span className="form__radio-button"></span>
+                    Basic
+                  </label>
+                </div>
+                {/* //----------------------------------- */}
+                <div className="form__radio-group">
+                  <input
+                    type="radio"
+                    className="form__radio-input"
+                    id="plus"
+                    name="plan"
+                  />
+                  <label htmlFor="plus" className="form__radio-label">
+                    <span className="form__radio-button"></span>
+                    Plus
+                  </label>
+                </div>
+                {/* //----------------------------------- */}
+                <div className="form__radio-group">
+                  <input
+                    type="radio"
+                    className="form__radio-input"
+                    id="premium"
+                    name="plan"
+                  />
+                  <label htmlFor="premium" className="form__radio-label">
+                    <span className="form__radio-button"></span>
+                    Premium
+                  </label>
+                </div>
+              </div>
             </form>
           </div>
         </div>
