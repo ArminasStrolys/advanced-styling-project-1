@@ -15,7 +15,7 @@
     background-image: linear-gradient(
         105deg,
         rgba($color-white, 0.4) 0%,
-        rgba($color-white, 0.5) 50%,
+        rgba($color-white, 0.8) 50%,
         transparent 50%
       ),
       url(../images/bg-1.jpg);
@@ -72,11 +72,15 @@
           width: 33%;
           display: inline-block;
         }
+        &__radio-input {
+          display: none;
+        }
         &__radio-label {
           font-size: $default-font-size;
           cursor: pointer;
           padding-left: 4rem;
           position: relative;
+          font-weight: 600;
         }
         &__radio-button {
           height: 3rem;
@@ -86,7 +90,8 @@
           display: inline-block;
           position: absolute;
           left: 0;
-          top: -0.5rem;
+          top: -0.4rem;
+
           &::after {
             content: '';
             display: block;
@@ -95,6 +100,17 @@
             border-radius: 50%;
             @include absolute-center;
             background-color: $color-coral;
+            opacity: 0;
+            transition: opacity 0.2s;
+          }
+        }
+        &__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+          opacity: 1;
+        }
+        &__group {
+          margin-bottom: 2rem;
+          .btn {
+            margin-left: 3rem;
           }
         }
       }

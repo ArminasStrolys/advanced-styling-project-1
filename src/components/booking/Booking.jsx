@@ -72,6 +72,10 @@ const Booking = () => {
                   </label>
                 </div>
               </div>
+
+              <div className="form__group">
+                <button className="btn btn--primary">Next step &rarr;</button>
+              </div>
             </form>
           </div>
         </div>

@@ -151,6 +151,7 @@ $gutter-horizontal: 4rem;
 }
 
 .btn {
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -159,6 +160,9 @@ $gutter-horizontal: 4rem;
     display: inline-block;
     transition: all 1s;
     position: relative;
+    //for <button> element
+    border: none;
+    cursor: pointer;
   }
   &:hover {
     background-color: $color-white;
