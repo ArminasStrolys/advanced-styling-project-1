@@ -1,1 +1,19 @@
 @import '_var.scss';
+
+.section-booking {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $headingColor1,
+    $headingColor2
+  );
+
+  .book {
+    height: 50rem;
+    background-image: url(../images/bg-1.jpg);
+    background-size: 100%;
+    background-position: 0% 60%;
+    border-radius: 0.5rem;
+    @include box-shadow();
+  }
+}
