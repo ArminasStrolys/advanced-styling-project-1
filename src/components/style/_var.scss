@@ -84,6 +84,12 @@ $gutter-horizontal: 4rem;
 @mixin box-shadow($s1: 1.5rem, $s2: 4rem, $alpha: 0.5) {
   box-shadow: 0 $s1 $s2 rgba($color-black, $alpha);
 }
+@mixin absolute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 // ------------------------------------- UNIVERSAL CLASSES
 .center {
   text-align: center;
