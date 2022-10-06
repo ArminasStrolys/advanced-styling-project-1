@@ -48,6 +48,11 @@
   }
   &__copyright {
     color: $color-white;
+    width: 60%;
+    float: right;
+    border-top: 0.1rem solid $color-white;
+    padding-top: 1rem;
+    text-align: center;
     .footer__link:hover {
       scale: unset;
     }
