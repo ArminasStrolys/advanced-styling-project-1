@@ -4,6 +4,7 @@ import Pricing from '../pricing/Pricing';
 import Services from '../services/Services';
 import Stories from '../stories/Stories';
 import Booking from '../booking/Booking';
+import Footer from '../footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Pricing />
       <Stories />
       <Booking />
+      <Footer />
     </div>
   );
 }
