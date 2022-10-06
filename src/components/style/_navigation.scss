@@ -3,7 +3,26 @@
 .navigation {
   &__checkbox {
     display: none;
+    &:checked ~ .navigation__background {
+      scale: 100;
+    }
+    &:checked ~ .navigation__nav {
+      opacity: 1;
+      z-index: 2;
+    }
+    &:checked + .navigation__button .navigation__icon {
+      background-color: transparent;
+    }
+    &:checked + .navigation__button .navigation__icon::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+    &:checked + .navigation__button .navigation__icon::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
   }
+
   &__button {
     background-color: $color-coral;
     height: 7rem;
@@ -14,6 +33,14 @@
     border-radius: 50%;
     z-index: 3;
     text-align: center;
+    @include box-shadow(0rem, 2rem);
+    cursor: pointer;
+  }
+  &__button:hover .navigation__icon::before {
+    top: -1.3rem;
+  }
+  &__button:hover .navigation__icon::after {
+    top: 1.3rem;
   }
   &__background {
     height: 6rem;
@@ -25,7 +52,7 @@
     top: 5rem;
     z-index: 2;
     background-image: radial-gradient($headingColor1, $headingColor2);
-    scale: 100;
+    transition: all 0.6s linear;
   }
   &__nav {
     height: 100vh;
@@ -33,7 +60,9 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 4;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s;
   }
   &__list {
     @include absolute-center;
@@ -67,6 +96,33 @@
       background-position: 100%;
       color: $headingColor2;
       transform: translateX(1rem);
+    }
+  }
+  // BURGER
+  &__icon {
+    position: relative;
+    top: 3.4rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 0.2rem;
+      background-color: $color-dark-gray;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+    }
+    &::before {
+      top: -0.8rem;
+    }
+    &::after {
+      top: 0.8rem;
     }
   }
 }
