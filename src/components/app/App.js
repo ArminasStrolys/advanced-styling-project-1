@@ -6,6 +6,7 @@ import Stories from '../stories/Stories';
 import Booking from '../booking/Booking';
 import Footer from '../footer/Footer';
 import Navigation from '../navigation/Navigation';
+import PopUp from '../pop-up/Pop-up';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Stories />
       <Booking />
       <Footer />
+      <PopUp />
     </div>
   );
 }
