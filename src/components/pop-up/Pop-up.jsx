@@ -5,13 +5,16 @@ import img2 from '../images/img-book-2.jpg';
 const PopUp = () => {
   return (
     <div>
-      <div className="popup">
+      <div className="popup" id="popup">
         <div className="popup__content">
           <div className="popup__left">
             <img src={img2} alt="Dark hole" className="popup__image" />
             <img src={img1} alt="Flying particles" className="popup__image" />
           </div>
           <div className="popup__right">
+            <a href="#section-tours" className="popup__close">
+              &times;
+            </a>
             <h2 className="heading-secondary">Start booking now!</h2>
             <h3 className="heading-tertiary">
               Important &ndash; Please read these terms before booking.

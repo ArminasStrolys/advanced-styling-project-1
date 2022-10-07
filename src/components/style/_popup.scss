@@ -8,6 +8,13 @@
   top: 0;
   left: 0;
   z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
   .heading-secondary::after {
     content: 'Start booking now!';
   }
@@ -33,6 +40,7 @@
     .heading-tertiary {
       text-align: center;
     }
+
     .btn--orange {
       text-align: center;
       position: relative;
@@ -41,13 +49,29 @@
       margin-top: 4rem;
     }
   }
+  &__close {
+    &:link,
+    &:visited {
+      position: absolute;
+      right: 2rem;
+      top: 0;
+      color: $color-black;
+      text-decoration: none;
+      font-size: 4rem;
+    }
+  }
   &__image {
     display: block;
     width: 130%;
   }
 
   &__text {
+    padding-top: 2rem;
     text-align: center;
     font-size: $default-font-size;
+    column-count: 2;
+    column-gap: 5rem;
+    column-rule: 0.2rem solid $color-main-grayish;
+    hyphens: auto;
   }
 }
