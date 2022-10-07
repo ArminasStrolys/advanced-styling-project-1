@@ -18,19 +18,19 @@
 }
 
 html {
-  font-size: 62.5%;
-  @include responsive(phone) {
-    font-size: 20%;
-  }
-  @include responsive(tab-v) {
-    font-size: 60%;
-  }
-  @include responsive(tab-h) {
-    font-size: 70%;
-  }
+  font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
   @include responsive(desktop-big) {
     font-size: 80%;
   }
+  @include responsive(tab-h) {
+    font-size: 56.25%; //1rem = 8px; 8/16 = 50%
+  }
+  @include responsive(tab-v) {
+    font-size: 50%;
+  }
+  // @include responsive(phone) {
+  //   font-size: 50%;
+  // }
   body {
     background-color: $color-main-grayish;
     font-family: $font-lato;
