@@ -91,6 +91,25 @@ $gutter-horizontal: 4rem;
   top: 50%;
   transform: translate(-50%, -50%);
 }
+// ------------------------------------- RESPONSIVE MIXINS
+// 0 - 600px (phone)
+// 600 - 900px (tablet vertical)
+// 900 - 1200px (tablet horizontal)
+// 1200 - 1800px (desktop)
+// 1800px + (big desktop)
+@mixin responsive-phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+@mixin responsive-tablet-H {
+}
+@mixin responsive-tablet-V {
+}
+@mixin responsive-dektop {
+}
+@mixin responsive-desktop-big {
+}
 // ------------------------------------- UNIVERSAL CLASSES
 .center {
   text-align: center;

@@ -19,6 +19,9 @@
 
 html {
   font-size: 62.5%;
+  @include responsive-phone {
+    font-size: 50%;
+  }
   body {
     background-color: $color-main-grayish;
     font-family: $font-lato;
