@@ -12,7 +12,7 @@ const PopUp = () => {
             <img src={img1} alt="Flying particles" className="popup__image" />
           </div>
           <div className="popup__right">
-            <a href="#section-tours" className="popup__close">
+            <a href="#service-prices" className="popup__close">
               &times;
             </a>
             <h2 className="heading-secondary">Start booking now!</h2>

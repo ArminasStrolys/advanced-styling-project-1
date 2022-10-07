@@ -7,7 +7,7 @@ import photo3 from '../images/comp-photo-3.jpg';
 const Intro = () => {
   return (
     <main>
-      <section className="intro">
+      <section className="intro" id="intro">
         <h2 className="heading-secondary margin-XL">
           Photo and editing skills
         </h2>

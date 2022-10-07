@@ -9,7 +9,7 @@ const icons = [icon1, icon2, icon3, icon4];
 
 const Services = () => {
   return (
-    <section className="services">
+    <section className="services" id="services">
       <div className="row">
         {icons.map((e, index) => (
           <Service key={index} icon={e} nums={index + 1} />

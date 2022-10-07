@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Navigation />
-      <Heading />
+      <Heading id="1" />
       <Intro />
       <Services />
       <Pricing />
