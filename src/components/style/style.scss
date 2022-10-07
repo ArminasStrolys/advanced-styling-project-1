@@ -19,16 +19,16 @@
 
 html {
   font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
-  @include responsive(desktop-big) {
+  @include responsive(XXL) {
     font-size: 80%;
   }
-  @include responsive(tab-h) {
+  @include responsive(XL) {
     font-size: 56.25%; //1rem = 8px; 8/16 = 50%
   }
-  @include responsive(tab-v) {
+  @include responsive(M) {
     font-size: 50%;
   }
-  // @include responsive(phone) {
+  // @include responsive(S) {
   //   font-size: 50%;
   // }
   body {

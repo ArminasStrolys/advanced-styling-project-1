@@ -100,17 +100,17 @@ $gutter-horizontal: 4rem;
 // 1em = 16px
 
 @mixin responsive($breakpoint) {
-  @if $breakpoint == phone {
+  @if $breakpoint == S {
     @media (max-width: 37.5em) {
       @content; //600px
     }
   }
-  @if $breakpoint == tab-v {
+  @if $breakpoint == M {
     @media (max-width: 56.25em) {
       @content; //900px
     }
   }
-  @if $breakpoint == tab-h {
+  @if $breakpoint == XL {
     @media (max-width: 75em) {
       @content; //1200px
     }
@@ -121,7 +121,7 @@ $gutter-horizontal: 4rem;
   //     @content;
   //   }
   // }
-  @if $breakpoint == desktop-big {
+  @if $breakpoint == XXL {
     @media (min-width: 112.5em) {
       @content; //1800px
     }

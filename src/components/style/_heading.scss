@@ -42,6 +42,13 @@
     border: 0.1rem solid $color-white;
     padding: 4rem 5rem;
     animation: border_opacity 2s ease-in-out 1s backwards;
+    @include responsive(M) {
+      padding: 2rem 3rem;
+    }
+    @include responsive(S) {
+      padding: 2rem 3rem;
+      border: none;
+    }
     @keyframes border_opacity {
       0% {
         border: 0.1rem solid rgba($color-white, 0);
@@ -57,6 +64,15 @@
       letter-spacing: 3.5rem;
       margin-right: -3.2rem;
       animation: move_from_left 2s ease-out;
+      @include responsive(M) {
+        letter-spacing: 1.8rem;
+        margin-right: -1.8rem;
+      }
+      @include responsive(S) {
+        letter-spacing: 0.5rem;
+        margin-right: -0.5rem;
+        font-size: 4rem;
+      }
       @keyframes move_from_left {
         0% {
           transform: translate(-10rem, -10rem);
@@ -75,6 +91,15 @@
       letter-spacing: 3.42rem;
       margin-right: -3.2rem;
       animation: move_from_right 2s ease-out;
+      @include responsive(M) {
+        letter-spacing: 2.2rem;
+        margin-right: -2rem;
+      }
+      @include responsive(S) {
+        letter-spacing: 1rem;
+        margin-right: 0;
+        font-size: 1.5rem;
+      }
       @keyframes move_from_right {
         0% {
           transform: translate(10rem, 10rem);
