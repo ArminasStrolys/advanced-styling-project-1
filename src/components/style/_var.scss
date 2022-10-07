@@ -192,13 +192,14 @@ $gutter-horizontal: 4rem;
     }
   }
   &--orange {
-    background-color: $color-coral;
-    color: $color-white;
+    background-color: rgba($color-coral, 0.7);
+    color: $color-dark-gray;
     font-size: $default-font-size;
     border-radius: 5rem;
     @include box-shadow;
     &:hover {
-      background-color: rgba($color-coral, 0.4);
+      background-color: $color-coral;
+      color: $color-white;
     }
   }
   &::after {

@@ -16,6 +16,38 @@
     height: 50rem;
     width: 75%;
     background-color: $color-white;
+    display: table;
+
     // @include box-shadow;
+  }
+  &__left {
+    width: 33.333333%;
+    display: table-cell;
+    overflow: hidden;
+  }
+  &__right {
+    width: 66.666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2rem 5rem;
+    .heading-tertiary {
+      text-align: center;
+    }
+    .btn--orange {
+      text-align: center;
+      position: relative;
+      left: 50%;
+      translate: (-50%);
+      margin-top: 4rem;
+    }
+  }
+  &__image {
+    display: block;
+    width: 130%;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: $default-font-size;
   }
 }
