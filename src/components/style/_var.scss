@@ -97,19 +97,36 @@ $gutter-horizontal: 4rem;
 // 900 - 1200px (tablet horizontal)
 // 1200 - 1800px (desktop)
 // 1800px + (big desktop)
-@mixin responsive-phone {
-  @media (max-width: 600px) {
-    @content;
+// 1em = 16px
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content; //600px
+    }
+  }
+  @if $breakpoint == tab-v {
+    @media (max-width: 56.25em) {
+      @content; //900px
+    }
+  }
+  @if $breakpoint == tab-h {
+    @media (max-width: 75em) {
+      @content; //1200px
+    }
+  }
+  // We dont need this one, because we already coded for standart desktop version
+  // @mixin responsive-dektop {
+  //   @media (max-width: 1800px) {
+  //     @content;
+  //   }
+  // }
+  @if $breakpoint == desktop-big {
+    @media (min-width: 112.5em) {
+      @content; //1800px
+    }
   }
 }
-@mixin responsive-tablet-H {
-}
-@mixin responsive-tablet-V {
-}
-@mixin responsive-dektop {
-}
-@mixin responsive-desktop-big {
-}
+
 // ------------------------------------- UNIVERSAL CLASSES
 .center {
   text-align: center;
