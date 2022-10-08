@@ -4,6 +4,9 @@
   margin-top: 10rem;
   height: 70vh;
   position: relative;
+  @include responsive(XXL) {
+    height: 80rem;
+  }
   @include responsive(M) {
     height: 200rem;
   }
@@ -172,6 +175,13 @@
         rgba($card-col-3, 0.7),
         rgba($card-col-3-gradient, 0.7)
       );
+    }
+  }
+  .btn--orange {
+    @media (min-width: 2284px) {
+      left: 50%;
+      top: 70%;
+      transform: translate(-550%);
     }
   }
 }

@@ -55,7 +55,7 @@ const Pricing = () => {
         ))}
       </div>
       {/* <div className="center"> */}
-      <a href="#" className="btn btn--orange">
+      <a href="#popup" className="btn btn--orange">
         Discover all plans
       </a>
       {/* </div> */}

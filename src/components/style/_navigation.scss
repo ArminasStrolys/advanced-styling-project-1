@@ -121,6 +121,9 @@
       background-color: $color-dark-gray;
       display: inline-block;
       transition: all 0.2s;
+      @include responsive(M) {
+        height: 0.37rem;
+      }
     }
     &::before,
     &::after {

@@ -80,10 +80,14 @@
       text-align: center;
       position: relative;
       left: 50%;
-      translate: (-50%);
-      margin-top: 4rem;
+      translate: (0%);
+      margin-top: 10rem;
+      @include responsive(XXL) {
+        left: 50%;
+        margin-top: 0;
+        transform: translate(-50%, -50%);
+      }
       @include responsive(XL) {
-        // margin-top: -20rem;
         margin-top: 0;
         transform: translate(0%, -225%);
       }
