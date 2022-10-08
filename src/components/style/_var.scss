@@ -102,6 +102,14 @@ $gutter-horizontal: 4rem;
         margin-bottom: $gutter-vertical-small;
       }
     }
+    &:last-child {
+      @include responsive(M) {
+        width: 100%;
+        padding: 0 3rem;
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
   }
 
   .col-1-of-2 {
@@ -159,6 +167,9 @@ $gutter-horizontal: 4rem;
   top: 85%;
   transform: translate(-50%);
   // top: 10rem;
+  @include responsive(M) {
+    top: 200%;
+  }
 }
 .margin-XL {
   margin-bottom: 8rem;

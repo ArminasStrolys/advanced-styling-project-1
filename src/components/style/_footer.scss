@@ -15,6 +15,9 @@
   &__logo {
     width: 15rem;
     height: auto;
+    @include responsive(M) {
+      width: 20rem;
+    }
   }
   &__navigation {
     border-top: 0.1rem solid $color-white;
@@ -33,6 +36,9 @@
     padding: 0 1rem;
     &:not(:last-child) {
       margin-right: 1.5rem;
+      @include responsive(M) {
+        margin-right: 0.5rem;
+      }
     }
   }
   &__link {
@@ -62,7 +68,7 @@
     padding-top: 1rem;
     text-align: center;
     @include responsive(M) {
-      width: calc(100% * 2 + $gutter-horizontal);
+      width: 100%;
       float: unset;
     }
     .footer__link:hover {
