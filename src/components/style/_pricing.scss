@@ -20,15 +20,15 @@
     font-size: $default-font-size;
     &__side {
       transition: all 0.8s ease;
-      height: 50rem;
+      height: 55rem;
       backface-visibility: hidden;
       border-radius: 0.5rem;
       @include box-shadow(2rem, 4rem, 0.3);
       overflow: hidden;
       position: relative;
-      @include responsive(M) {
-        height: 55rem;
-      }
+      // @include responsive(M) {
+      //   height: 55rem;
+      // }
       &--front {
         background-color: $color-white;
       }
@@ -61,6 +61,12 @@
       white-space: nowrap;
       background-color: rgba($headingColor2, 0.7);
       width: 100%;
+      @include responsive(M) {
+        transform: translate(-49.95%) skewY(-6.5deg);
+      }
+      @include responsive(XS) {
+        transform: translate(-49.95%, -100%) skewY(-7.5deg);
+      }
     }
     .card__picture {
       background-size: cover;

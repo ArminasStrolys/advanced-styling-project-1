@@ -54,11 +54,11 @@ const Pricing = () => {
           />
         ))}
       </div>
-      <div className="center">
-        <a href="#" className="btn btn--orange">
-          Discover all plans
-        </a>
-      </div>
+      {/* <div className="center"> */}
+      <a href="#" className="btn btn--orange">
+        Discover all plans
+      </a>
+      {/* </div> */}
     </section>
   );
 };

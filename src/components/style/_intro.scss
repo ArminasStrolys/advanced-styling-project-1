@@ -6,8 +6,8 @@
   padding: 95rem 5%;
   margin-top: -100rem;
   @include responsive(M) {
-    padding: 180rem 5%;
-    margin-top: -195rem;
+    padding: 185rem 5%;
+    margin-top: -205rem;
   }
   // -------------------------------------------------------------------- LEFT SIDE OF THE SECTION
   .paragraph {
@@ -20,8 +20,12 @@
   // -------------------------------------------------------------------- RIGHT SIDE OF THE SECTION
   .composition {
     position: relative;
+    @include responsive(M) {
+      left: -20%;
+      transform: (-50%);
+    }
     @include responsive(S) {
-      left: 25%;
+      left: 10%;
       transform: (-50%);
     }
     &__photo {
@@ -55,10 +59,11 @@
         }
       }
       @include responsive(M) {
-        width: 150%;
+        width: 100%;
         margin-bottom: 10rem;
       }
       @include responsive(S) {
+        width: 70%;
         &--p1 {
           left: -2rem;
           top: 2rem;

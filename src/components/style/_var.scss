@@ -38,6 +38,11 @@ $gutter-horizontal: 4rem;
 // 1em = 16px
 
 @mixin responsive($breakpoint) {
+  @if $breakpoint == XS {
+    @media (max-width: 25em) {
+      @content; //600px
+    }
+  }
   @if $breakpoint == S {
     @media (max-width: 37.5em) {
       @content; //600px
@@ -153,10 +158,10 @@ $gutter-horizontal: 4rem;
 @mixin box-shadow($s1: 1.5rem, $s2: 4rem, $alpha: 0.5) {
   box-shadow: 0 $s1 $s2 rgba($color-black, $alpha);
 }
-@mixin absolute-center {
+@mixin absolute-center($top: 50%) {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: $top;
   transform: translate(-50%, -50%);
 }
 // ------------------------------------- UNIVERSAL CLASSES
@@ -168,7 +173,7 @@ $gutter-horizontal: 4rem;
   transform: translate(-50%);
   // top: 10rem;
   @include responsive(M) {
-    top: 200%;
+    top: 100%;
   }
 }
 .margin-XL {
@@ -235,6 +240,7 @@ $gutter-horizontal: 4rem;
     display: inline-block;
     transition: all 1s;
     position: relative;
+
     //for <button> element
     border: none;
     cursor: pointer;
@@ -271,6 +277,16 @@ $gutter-horizontal: 4rem;
     font-size: $default-font-size;
     border-radius: 5rem;
     @include box-shadow;
+    @include absolute-center(10%);
+    @include responsive(XXL) {
+      top: 10rem;
+    }
+    @include responsive(XL) {
+      top: 15rem;
+    }
+    @include responsive(M) {
+      top: 5rem;
+    }
     &:hover {
       background-color: $color-coral;
       color: $color-white;

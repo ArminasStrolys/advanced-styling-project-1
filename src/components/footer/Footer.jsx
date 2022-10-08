@@ -4,7 +4,7 @@ import logo from '../images/logo.jpg';
 const Footer = () => {
   return (
     <>
-      <footer className="footer">
+      <footer style={{ marginBottom: '-2rem' }} className="footer">
         <div className="footer__logo-box">
           <img src={logo} alt="" className="footer__logo" />
         </div>
@@ -40,7 +40,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="col-1-of-2">
+          <div style={{ marginBottom: '0' }} className="col-1-of-2">
             <p className="footer__copyright">
               Web built by{' '}
               <a href="#" className="footer__link">

@@ -3,6 +3,9 @@
 .section-stories {
   padding: 15rem 0;
   position: relative;
+  @include responsive(M) {
+    padding: 25rem 0;
+  }
   .heading-secondary::after {
     content: 'What others have to say';
   }
@@ -16,8 +19,16 @@
     font-size: $default-font-size;
     transform: skewX(-12deg);
     margin-bottom: 10rem;
+    @include responsive(M) {
+      width: 100%;
+      transform: skewX(0);
+    }
     & > * {
       transform: skewX(12deg);
+      @include responsive(M) {
+        // width: 150%;
+        transform: skewX(0);
+      }
     }
     &__shape {
       width: 15rem;
@@ -27,6 +38,9 @@
       clip-path: circle(50% at 50% 50%);
       transform: translateX(-3rem) skewX(12deg);
       position: relative;
+      @include responsive(M) {
+        transform: translateX(-3rem) skewX(0);
+      }
     }
     &__image {
       width: 100%;
