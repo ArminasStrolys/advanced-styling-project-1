@@ -14,6 +14,10 @@
   background-position: bottom;
   background-size: cover;
   transform: skewY(-7deg);
+  @include responsive(M) {
+    padding: 22rem 0;
+    height: 150rem;
+  }
   & > * {
     transform: skewY(7deg);
   }
@@ -48,8 +52,8 @@
       filter: brightness(0) saturate(100%) invert(48%) sepia(94%) saturate(721%)
         hue-rotate(360deg) brightness(102%) contrast(104%);
     }
-    &__text {
-    }
+    // &__text {
+    // }
     .heading-tertiary--txt-1::before {
       content: 'Lightroom';
     }
