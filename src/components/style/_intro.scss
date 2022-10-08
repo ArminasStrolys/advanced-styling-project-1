@@ -5,6 +5,10 @@
   background-color: $color-main-grayish;
   padding: 95rem 5%;
   margin-top: -100rem;
+  @include responsive(M) {
+    padding: 180rem 5%;
+    margin-top: -195rem;
+  }
   // -------------------------------------------------------------------- LEFT SIDE OF THE SECTION
   .paragraph {
     font-size: $default-font-size;
@@ -16,6 +20,10 @@
   // -------------------------------------------------------------------- RIGHT SIDE OF THE SECTION
   .composition {
     position: relative;
+    @include responsive(S) {
+      left: 25%;
+      transform: (-50%);
+    }
     &__photo {
       width: 55%;
       @include box-shadow;
@@ -42,6 +50,27 @@
         transform: scale(1.2);
         box-shadow: 0 3rem 6rem rgba($color-black, 0.6);
         filter: grayscale(0);
+        @include responsive(S) {
+          outline: none;
+        }
+      }
+      @include responsive(M) {
+        width: 150%;
+        margin-bottom: 10rem;
+      }
+      @include responsive(S) {
+        &--p1 {
+          left: -2rem;
+          top: 2rem;
+        }
+        &--p2 {
+          left: 7rem;
+          top: 22rem;
+        }
+        &--p3 {
+          left: 0rem;
+          top: 42rem;
+        }
       }
     }
     &:hover .composition__photo:not(:hover) {

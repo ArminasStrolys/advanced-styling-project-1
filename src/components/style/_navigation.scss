@@ -35,7 +35,12 @@
     text-align: center;
     @include box-shadow(0rem, 2rem);
     cursor: pointer;
+    @include responsive(S) {
+      top: 2.5rem;
+      right: 2.5rem;
+    }
   }
+
   &__button:hover .navigation__icon::before {
     top: -1.3rem;
   }
@@ -53,6 +58,10 @@
     z-index: 2;
     background-image: radial-gradient($headingColor1, $headingColor2);
     transition: all 0.6s linear;
+    @include responsive(S) {
+      top: 2.5rem;
+      right: 2.5rem;
+    }
   }
   &__nav {
     height: 100vh;
@@ -68,6 +77,7 @@
     @include absolute-center;
     list-style: none;
     text-align: center;
+    white-space: nowrap;
   }
   &__item {
     padding: 1rem;

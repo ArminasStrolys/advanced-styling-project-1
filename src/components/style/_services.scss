@@ -16,7 +16,7 @@
   transform: skewY(-7deg);
   @include responsive(M) {
     padding: 22rem 0;
-    height: 150rem;
+    height: 155rem;
   }
   & > * {
     transform: skewY(7deg);

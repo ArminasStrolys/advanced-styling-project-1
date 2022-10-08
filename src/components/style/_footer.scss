@@ -4,6 +4,9 @@
   background-color: $color-dark-gray;
   padding: 10rem 0;
   font-size: 1.2rem;
+  @include responsive(M) {
+    padding: 15rem 0;
+  }
 
   &__logo-box {
     text-align: center;
@@ -17,6 +20,10 @@
     border-top: 0.1rem solid $color-white;
     padding-top: 1rem;
     display: inline-block;
+    @include responsive(M) {
+      width: 100%;
+      text-align: center;
+    }
   }
   &__list {
     list-style: none;
@@ -46,6 +53,7 @@
       background-color: rgba($color-white, 0.2);
     }
   }
+
   &__copyright {
     color: $color-white;
     width: 60%;
@@ -53,6 +61,10 @@
     border-top: 0.1rem solid $color-white;
     padding-top: 1rem;
     text-align: center;
+    @include responsive(M) {
+      width: calc(100% * 2 + $gutter-horizontal);
+      float: unset;
+    }
     .footer__link:hover {
       scale: unset;
     }

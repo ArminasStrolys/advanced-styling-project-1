@@ -13,6 +13,10 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 72%, 76% 77%, 26% 81%, 0% 87%);
   clip-path: polygon(0 0, 100% 0, 100% 72%, 76% 77%, 26% 81%, 0% 87%);
   position: relative;
+  @include responsive(S) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 72%, 74% 75%, 25% 77%, 0% 79%);
+    clip-path: polygon(0 0, 100% 0, 100% 72%, 74% 75%, 25% 77%, 0% 79%);
+  }
 }
 
 //// -------------------------------------------------------------------- COMPANY LOGO SECTION

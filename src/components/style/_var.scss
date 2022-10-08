@@ -97,6 +97,7 @@ $gutter-horizontal: 4rem;
       margin-right: $gutter-horizontal;
       @include responsive(M) {
         width: 100%;
+        padding: 0 3rem;
         margin-right: 0;
         margin-bottom: $gutter-vertical-small;
       }
