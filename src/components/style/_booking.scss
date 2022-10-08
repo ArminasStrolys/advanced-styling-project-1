@@ -7,6 +7,11 @@
     $headingColor1,
     $headingColor2
   );
+  .heading-secondary {
+    @include responsive(XS) {
+      margin-left: -4rem;
+    }
+  }
   .heading-secondary::after {
     content: 'Book now!';
   }
@@ -23,16 +28,43 @@
     background-position: 0% 60%;
     border-radius: 0.5rem;
     @include box-shadow();
+    @include responsive(M) {
+      width: 150%;
+      transform: translateX(-16.75%);
+    }
+    @include responsive(S) {
+      width: 100%;
+      transform: translateX(0%);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    @include responsive(XS) {
+      height: 65rem;
+      width: 75%;
+      transform: translateX(16.25%);
+      background-image: linear-gradient(
+          130deg,
+          rgba($color-white, 0.4) 0%,
+          rgba($color-white, 0.8) 50%,
+          transparent 50%
+        ),
+        url(../images/bg-1.jpg);
+    }
     &__form {
       width: 50%;
       padding: 6rem;
-
+      @include responsive(S) {
+        padding: 3rem;
+      }
       .form {
         .heading-secondary {
           left: 11.6rem;
         }
         &__group:not(:last-child) {
           margin-bottom: 2rem;
+          @include responsive(S) {
+            margin-bottom: 1rem;
+          }
         }
         &__input {
           font-size: $default-font-size;
@@ -62,6 +94,14 @@
             visibility: hidden;
             transform: translateY(-4rem);
           }
+          @include responsive(S) {
+            width: 100%;
+            padding: 0.5rem 2rem;
+          }
+          @include responsive(XS) {
+            width: 200%;
+            padding: 0.5rem 2rem;
+          }
         }
         &__label {
           font-size: 1.2rem;
@@ -74,6 +114,10 @@
         &__radio-group {
           width: 33%;
           display: inline-block;
+          @include responsive(S) {
+            display: block;
+            margin: 1rem 0;
+          }
         }
         &__radio-input {
           display: none;
@@ -112,7 +156,12 @@
         }
         &__group {
           .btn {
-            // margin-left: 3rem;
+            @include responsive(M) {
+              padding: 1rem 3rem;
+            }
+            @include responsive(XS) {
+              transform: translate(80%, 200%);
+            }
           }
         }
       }

@@ -26,6 +26,14 @@
     background-color: $color-white;
     display: table;
     overflow: hidden;
+    @include responsive(M) {
+      width: 95%;
+      height: 50rem;
+    }
+    @include responsive(S) {
+      width: 95%;
+      height: 55rem;
+    }
     // opacity: 0;
     // transform: translate(-50%, -50%) scale(0.8);
     // transition: all 0.3s;
@@ -38,12 +46,32 @@
     width: 33.333333%;
     display: table-cell;
     overflow: hidden;
+    @include responsive(S) {
+      width: 100%;
+      display: block;
+      position: absolute;
+      left: 0;
+      opacity: 0.2;
+      height: inherit;
+      z-index: 0;
+    }
   }
   &__right {
     width: 66.666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 2rem 5rem;
+    @include responsive(XL) {
+      padding: 0rem 2rem;
+    }
+    @include responsive(M) {
+      padding: 0 1rem;
+    }
+    @include responsive(S) {
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
     .heading-tertiary {
       text-align: center;
     }
@@ -54,11 +82,17 @@
       left: 50%;
       translate: (-50%);
       margin-top: 4rem;
+      @include responsive(XL) {
+        // margin-top: -20rem;
+        margin-top: 0;
+        transform: translate(0%, -225%);
+      }
+      @include responsive(M) {
+        transform: translate(0%, -25%);
+      }
     }
   }
   &__close {
-    // width: 2rem;
-    // height: 2rem;
     &:link,
     &:visited {
       position: absolute;
@@ -77,6 +111,9 @@
   &__image {
     display: block;
     width: 130%;
+    @include responsive(M) {
+      width: 170%;
+    }
   }
 
   &__text {
@@ -87,5 +124,16 @@
     column-gap: 5rem;
     column-rule: 0.2rem solid $color-main-grayish;
     hyphens: auto;
+    @include responsive(XL) {
+      font-size: 1.4rem;
+      column-gap: 3rem;
+    }
+    @include responsive(M) {
+      column-gap: 2rem;
+      padding-top: 0;
+      font-size: 1.6rem;
+      hyphens: none;
+      column-count: 1;
+    }
   }
 }
