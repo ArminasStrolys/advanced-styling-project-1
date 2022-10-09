@@ -1,5 +1,6 @@
 import React from 'react';
 import photo1 from '../images/comp-photo-1.jpg';
+import photo1s from '../images/comp-photo-1-small.jpg';
 import photo2 from '../images/comp-photo-2.jpg';
 import photo3 from '../images/comp-photo-3.jpg';
 // Photos cut at 1000x800 px
@@ -46,6 +47,15 @@ const Intro = () => {
           </div>
           <div className="col-1-of-2">
             <div className="composition">
+              {/* Density and resolution switch */}
+              {/* <img
+                srcSet={`${photo1} 800w, ${photo1s} 480w`}
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                className="composition__photo composition__photo--p1"
+                src={photo1}
+                alt="Portrait 1"
+              /> */}
+
               <img
                 src={photo1}
                 alt="Gallery preview 1 of 3"
