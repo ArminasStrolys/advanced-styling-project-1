@@ -27,6 +27,7 @@
     &__side {
       transition: all 0.8s ease;
       height: 55rem;
+      -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       border-radius: 0.5rem;
       @include box-shadow(2rem, 4rem, 0.3);
