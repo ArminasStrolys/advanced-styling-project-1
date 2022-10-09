@@ -1,13 +1,34 @@
 import React from 'react';
 import logo from '../images/logo.jpg';
+import logo_small from '../images/logo-small.jpg';
+import logo2x from '../images/logo-low.jpg';
 
 const Footer = () => {
   return (
     <>
       <footer style={{ marginBottom: '-2rem' }} className="footer">
         <div className="footer__logo-box">
-          <img src={logo} alt="" className="footer__logo" />
+          <img
+            src={logo}
+            srcSet={`${logo} 1x, ${logo2x} 2x`}
+            alt="logo of the company"
+            className="footer__logo"
+          />
         </div>
+
+        {/* <picture className="footer_logo">
+          <source
+            srcSet={`${logo_small} 1x, ${logo} 2x`}
+            media="(max-width: 37.5em)"
+          />
+          <img
+            src={logo}
+            srcSet={`${logo} 1x, ${logo2x} 2x`}
+            alt="logo of the company"
+            className="footer__logo"
+          />
+        </picture> */}
+
         <div className="row">
           <div className="col-1-of-2">
             <div className="footer__navigation">
@@ -23,7 +44,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="footer__item">
-                  <a href="" className="footer__link">
+                  <a href="#" className="footer__link">
                     Career
                   </a>
                 </li>
