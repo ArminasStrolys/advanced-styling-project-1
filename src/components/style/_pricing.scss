@@ -52,6 +52,7 @@
         );
         transform: rotateY(180deg);
         @include responsive(M) {
+          clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
           transform: none;
           height: 25rem;
           position: relative;
@@ -133,6 +134,10 @@
     &__price-value {
       font-size: 10rem;
       font-weight: 100;
+      @include responsive(M) {
+        font-size: 8rem;
+        margin-bottom: -2rem;
+      }
     }
     &__price-only {
       font-size: 2rem;
