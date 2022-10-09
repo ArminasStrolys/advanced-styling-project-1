@@ -21,11 +21,16 @@
     margin-bottom: 10rem;
     @include responsive(M) {
       width: 100%;
+      padding: 7rem;
+      height: auto;
+    }
+    @include responsive(S) {
+      width: 100%;
       transform: skewX(0);
     }
     & > * {
       transform: skewX(12deg);
-      @include responsive(M) {
+      @include responsive(S) {
         // width: 150%;
         transform: skewX(0);
       }
@@ -39,6 +44,9 @@
       transform: translateX(-3rem) skewX(12deg);
       position: relative;
       @include responsive(M) {
+        margin: 1.5rem;
+      }
+      @include responsive(S) {
         transform: translateX(-3rem) skewX(0);
       }
     }
