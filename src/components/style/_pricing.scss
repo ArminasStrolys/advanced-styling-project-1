@@ -8,7 +8,7 @@
     height: 80rem;
   }
   @include responsive(M) {
-    height: 200rem;
+    height: 300rem;
   }
   .heading-secondary {
     &::after {
@@ -21,6 +21,9 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     font-size: $default-font-size;
+    @include responsive(M) {
+      perspective: none;
+    }
     &__side {
       transition: all 0.8s ease;
       height: 55rem;
@@ -29,9 +32,12 @@
       @include box-shadow(2rem, 4rem, 0.3);
       overflow: hidden;
       position: relative;
-      // @include responsive(M) {
-      //   height: 55rem;
-      // }
+      @include responsive(M) {
+        height: 70rem;
+        backface-visibility: unset;
+        overflow: unset;
+        position: relative;
+      }
       &--front {
         background-color: $color-white;
       }
@@ -45,13 +51,26 @@
           rgba($card-col-1-gradient, 0.6)
         );
         transform: rotateY(180deg);
+        @include responsive(M) {
+          transform: none;
+          height: 25rem;
+          position: relative;
+          margin-bottom: -10rem;
+          top: -20rem;
+        }
       }
     }
     &:hover .card__side--front {
       transform: rotateY(-180deg);
+      @include responsive(M) {
+        transform: none;
+      }
     }
     &:hover .card__side--back {
       transform: rotateY(0);
+      @include responsive(M) {
+        transform: none;
+      }
     }
     &__heading {
       color: $color-white;
@@ -118,6 +137,10 @@
     &__price-only {
       font-size: 2rem;
       text-transform: uppercase;
+      @include responsive(M) {
+        margin-bottom: -3rem;
+        margin-top: 0rem;
+      }
     }
   }
   .card--1 {
@@ -137,6 +160,13 @@
         rgba($card-col-1, 0.7),
         rgba($card-col-1-gradient, 0.7)
       );
+      @include responsive(M) {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($card-col-1, 1),
+          rgba($card-col-1-gradient, 1)
+        );
+      }
     }
   }
   .card--2 {
@@ -156,6 +186,13 @@
         rgba($card-col-2, 0.7),
         rgba($card-col-2-gradient, 0.7)
       );
+      @include responsive(M) {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($card-col-2, 1),
+          rgba($card-col-2-gradient, 1)
+        );
+      }
     }
   }
   .card--3 {
@@ -175,6 +212,13 @@
         rgba($card-col-3, 0.7),
         rgba($card-col-3-gradient, 0.7)
       );
+      @include responsive(M) {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($card-col-3, 1),
+          rgba($card-col-3-gradient, 1)
+        );
+      }
     }
   }
   //this is a bit buggy
