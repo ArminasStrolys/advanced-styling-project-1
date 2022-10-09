@@ -7,12 +7,20 @@
       rgba($headingColor1, 0.7),
       rgba($headingColor2, 0.6)
     ),
-    url(../images/sunset.jpg);
+    url(../images/sunset-low.jpg);
   background-size: cover;
   background-position: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 72%, 76% 77%, 26% 81%, 0% 87%);
   clip-path: polygon(0 0, 100% 0, 100% 72%, 76% 77%, 26% 81%, 0% 87%);
   position: relative;
+  @media (min-resolution: 192dpi) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($headingColor1, 0.7),
+        rgba($headingColor2, 0.6)
+      ),
+      url(../images/sunset.jpg);
+  }
   @include responsive(S) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 72%, 74% 75%, 25% 77%, 0% 79%);
     clip-path: polygon(0 0, 100% 0, 100% 72%, 74% 75%, 25% 77%, 0% 79%);
