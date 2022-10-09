@@ -42,3 +42,8 @@ html {
     box-sizing: border-box;
   }
 }
+
+::selection {
+  background-color: $color-coral;
+  color: $color-white;
+}

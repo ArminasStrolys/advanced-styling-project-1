@@ -39,22 +39,22 @@ $gutter-horizontal: 4rem;
 
 @mixin responsive($breakpoint) {
   @if $breakpoint == XS {
-    @media (max-width: 25em) {
+    @media only screen and (max-width: 25em) {
       @content; //600px
     }
   }
   @if $breakpoint == S {
-    @media (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em) {
       @content; //600px
     }
   }
   @if $breakpoint == M {
-    @media (max-width: 56.25em) {
+    @media only screen and (max-width: 56.25em) {
       @content; //900px
     }
   }
   @if $breakpoint == XL {
-    @media (max-width: 75em) {
+    @media only screen and (max-width: 75em) {
       @content; //1200px
     }
   }
@@ -65,7 +65,7 @@ $gutter-horizontal: 4rem;
   //   }
   // }
   @if $breakpoint == XXL {
-    @media (min-width: 112.5em) {
+    @media only screen and (min-width: 112.5em) {
       @content; //1800px
     }
   }
